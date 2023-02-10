@@ -7,6 +7,7 @@ let promise1 = new Promise((resolve, reject) => {
 let promise2 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("User Data Found...");
+    // reject(new Error("Not Found",code:404))
   }, 3000);
 });
 
@@ -28,8 +29,3 @@ function login() {
 }
 
 // Promise Chaining
-
-fetch("https://dummyjson.com/products")
-  .then((res) => res.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.log(error));
