@@ -43,20 +43,20 @@ let promise3 = new Promise((resolve, reject) => {
 
 // If I want any of these promises to resolve and the one which takes the least time - total time = min(promise1 && resolve ,promise2 && resolve ,promise3 && resolve )
 
-var startingTime = new Date();
-var endingTime;
-Promise.any([promise1, promise2, promise3])
-  .then((res) => {
-    console.log("Res", res);
-    endingTime = new Date();
+// var startingTime = new Date();
+// var endingTime;
+// Promise.any([promise1, promise2, promise3])
+//   .then((res) => {
+//     console.log("Res", res);
+//     endingTime = new Date();
 
-    console.log("Time Diff", endingTime - startingTime);
-  })
-  .catch((e) => {
-    console.log("Error", e);
-    endingTime = new Date();
-    console.log("Time Diff", endingTime - startingTime);
-  });
+//     console.log("Time Diff", endingTime - startingTime);
+//   })
+//   .catch((e) => {
+//     console.log("Error", e);
+//     endingTime = new Date();
+//     console.log("Time Diff", endingTime - startingTime);
+//   });
 
 // All settled means - keep the code going, show me the states but still keep the code going.- total time taken = sum of all promises
 // Promise.allSettled([promise1, promise2, promise3])
