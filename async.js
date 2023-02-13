@@ -25,6 +25,12 @@ async function myAsyncFunction() {
   //   const res = await promise1.catch((e) => {
   //     console.log("err", e);
   //   });
+
+  //   try {
+  //     const res = await promise1;
+  //   } catch (e) {
+  //     console.log("err", e);
+  //   }
 }
 
 myAsyncFunction();
