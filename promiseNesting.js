@@ -27,5 +27,3 @@ function login() {
       console.log(error);
     });
 }
-
-// Promise Chaining
