@@ -5,14 +5,3 @@ async function myAsyncFunction() {
   const data = await response.json(); //1
   globalProducts = data.products; //2seconds
 }
-
-console.log("globalProducts>>>>", globalProducts);
-
-async function mainFunction() {
-  await myAsyncFunction();
-  //   gap 2 seconds
-  console.log("globalProducts>>>>", globalProducts);
-}
-
-mainFunction();
-// myAsyncFunction();
