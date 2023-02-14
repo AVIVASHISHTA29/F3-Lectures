@@ -9,7 +9,12 @@
   </head>
   <body>
     <!-- <button onclick="search()">Search</button> -->
-    <button onclick="setAttr()">setAttr</button>
+    <h3 id="pageNumber">1</h3>
+    <button onclick="loadNext()" id="load_next">Next</button>
+    <button onclick="loadPrev()" id="load_prev" disabled="true">
+      Previous
+    </button>
+    <!-- <input id="search-input" /> -->
     <div id="flex-container"></div>
     <!-- <script src="./callbackHell.js" async defer></script> -->
     <!-- <script src="./promiseChaining.js" async defer></script> -->
@@ -21,6 +26,7 @@
     <!-- <script src="./fetchWithAsync.js" async defer></script> -->
     <!-- <script src="./callbackHellUsingAsync.js" async defer></script> -->
     <!-- <script src="./promiseNestToAsync.js" async defer></script> -->
-    <script src="./data-attr.js" async defer></script>
+    <!-- <script src="./data-attr.js" async defer></script> -->
+    <script src="./github-assignment.js" async defer></script>
   </body>
 </html>
