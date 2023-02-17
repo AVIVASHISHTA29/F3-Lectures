@@ -162,4 +162,4 @@ class Dog extends Animal {
 }
 
 const myPet = new Dog("tommy", "brown", "4", "cannine", "curly");
-console.log(myPet.speak());
+console.log(myPet);

@@ -30,6 +30,10 @@ class Vehicle {
   }
 }
 
+Vehicle.prototype.abc = function () {
+  return "";
+};
+
 let bike1 = new Vehicle("hayABusa", "Suzuki", "1340cc", "90000");
 
 console.log(bike1);
