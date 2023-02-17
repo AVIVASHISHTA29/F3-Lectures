@@ -157,7 +157,7 @@ class Dog extends Animal {
     this.tail = tail;
   }
   speak() {
-    return `Animal Name = ${this.species} ${super.speak()} Woof...`;
+    return `Animal Name = ${this.name} ${super.speak()} Woof...`;
   }
 }
 
