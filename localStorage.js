@@ -3,9 +3,9 @@
 // first part - that save the state of the user logging in
 //second part - get this saved state so that you can take them to the page
 
-if (localStorage.getItem("isLoggedIn") === "true") {
-  window.location.href = "/profile";
-}
+// if (localStorage.getItem("isLoggedIn") === "true") {
+//   window.location.href = "/profile";
+// }
 
 // console.log(localStorage.getItem("isLoggedIn"));
 // var isLoggedIn = localStorage.getItem("isLoggedIn");

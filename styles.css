@@ -4,3 +4,83 @@
   flex-wrap: wrap;
   align-items: center;
 }
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.navbar {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  padding: 1.5rem 3rem;
+}
+
+.navbar h1 {
+  margin: 0px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+.link {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .link {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#myLoader {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
