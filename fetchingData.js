@@ -22,11 +22,17 @@ console.log("Fetching Data");
 //       myDiv.innerHTML += `<p><strong>${quote.id} - ${quote.author} </strong> ${quote.quote}</p>`;
 //     });
 //   });
+// http://127.0.0.1:5500
 
-fetch("https://dummyjson.com/quotes/random")
+// request package ->
+// response package ->
+
+const options = {
+  method: "GET",
+};
+
+fetch("https://dummyjson.com/quotes/random", options)
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-    let myDiv = document.getElementById("results");
-    myDiv.innerHTML = `<p><strong>${data.id} - ${data.author} </strong> ${data.quote}</p>`;
   });
