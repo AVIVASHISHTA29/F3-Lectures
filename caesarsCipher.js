@@ -53,3 +53,11 @@ function encrypt(str) {
 // URYYB JBEYQ
 
 console.log(encrypt("HELLO WORLD"));
+
+var myArr = [{ marks: 90 }, { marks: 45 }, { marks: 54 }];
+
+var sortedArray = myArr.sort((a, b) => {
+  return a.marks - b.marks;
+});
+
+console.log(sortedArray);
