@@ -24,7 +24,4 @@ function mergeArr(arr1, arr2) {
 const myArr1 = [2, 5, 8, 10, 11];
 const myArr2 = [3, 7, 9, 12, 13];
 
-console.log("ARR1", myArr1);
-console.log("ARR2", myArr2);
-
 console.log("merging 2 arrays", mergeArr(myArr1, myArr2));

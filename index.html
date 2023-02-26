@@ -10,13 +10,19 @@
   <body>
     <input type="email" placeholder="Your Email" id="email-input" />
     <br />
-    <input type="password" placeholder="Your Password" />
+    <input type="password" placeholder="Your Password" id="pass-input" />
     <br />
-    <button onclick="loginUser()">Login</button>
+    <input
+      type="password"
+      placeholder="Confirm Password"
+      id="confirmpass-input"
+    />
+    <br />
+    <p style="color: red" id="error-message"></p>
+    <button onclick="signupUser()">Signup</button>
     <!-- <button onclick="search()">Search</button> -->
     <!-- <button onclick="clickedButton()" id="load_prev">Login</button> -->
     <!-- <input id="search-input" /> -->
-    <div id="flex-container"></div>
     <!-- <script src="./callbackHell.js" async defer></script> -->
     <!-- <script src="./promiseChaining.js" async defer></script> -->
     <!-- <script src="./script.js" async defer></script>-->
@@ -44,6 +50,7 @@
     <!-- <script src="./post.js" async defer></script> -->
     <!-- <script src="./caesarsCipher.js" async defer></script> -->
     <!-- <script src="./mergingTwoArr.js" async defer></script> -->
-    <script src="./merge.js" async defer></script>
+    <!-- <script src="./merge.js" async defer></script> -->
+    <script src="./contest3.js" async defer></script>
   </body>
 </html>
